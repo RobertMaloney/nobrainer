@@ -23,19 +23,4 @@
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++>
 ++++++++++++++++++++++++++++++++>
 <<<<<<<<<<<<<<<<<<<<<<<<
-[.>]
->
-++++++++++> # LF is ASCII 10
->>+
-[
-
-]
-
-0 N001_R
-1 0NN1_R ~ Convert newline to two next to it
-2 NN01_R ~ Move the right one to imitate a duplication
-3 NNRR_0 ~ Convert R in string to two Rs
-4 NNR0_R ~ Move one back effectively duplicating
-5 NNR1_R ~ Set bit to 1
-5 N011_R ~ Subtract from each until one is 0 Both are not 0 so bit stays 1 and we keep going
-6 N000_R ~ Both are 0 so bit becomes 0 we print
+.>.>.>.>.>.>.>.>.>
