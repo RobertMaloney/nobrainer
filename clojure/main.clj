@@ -23,4 +23,4 @@
            pc 0]
       (if (< pc (count in))
         (let [[newstate newpc] (runcommand in state pc)]
-          (recur in newstate (+ newpc 1))))))
+          (recur in newstate (inc newpc))))))
