@@ -37,6 +37,9 @@
       \. (do
             (print (char (nth (:tape state) dp)))
             state)
+      \, (let [reader (java.io.BufferedReader. *in*)
+               c (char (.read reader))]
+            (assoc-in state [:tape dp] c))
       state)
     (case command
       \[ (goforward program state pc)
